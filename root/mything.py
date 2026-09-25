@@ -5,7 +5,7 @@ while True:
         print("You are coding!")
         while True:
             print("How are you feeling? (tired, hungry, happy)")
-            feeling = input().strip().lower()
+            feeling = input().lower()
             if feeling in ["tired", "hungry", "happy"]:
                 if feeling == "tired":
                     state = "sleeping"
@@ -19,7 +19,7 @@ while True:
         print("You are eating!")
         while True:
             print("How are you feeling?")
-            feeling = input().strip().lower()
+            feeling = input().lower()
             if feeling in ["hungry", "full", "tired"]:
                 if feeling == "hungry":
                     state = "eating"
@@ -33,7 +33,7 @@ while True:
         print("You are sleeping!")
         while True:
             print("How are you feeling?")
-            feeling = input().strip().lower()
+            feeling = input().lower()
             if feeling in ["hungry", "awake", "tired"]:
                 if feeling == "hungry":
                     state = "eating"
